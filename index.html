@@ -337,8 +337,8 @@
                         <div class="row align-items-center" style="padding-bottom: 20px;">
                             <div class="col-md-12 col-lg-12">
                                 <div class="card-header">
-                                    <h4 class="page-title" style="text-align: center;" data-i18n="rightbar.announcement">Announcement</h4>
-                                    <text data-i18n="rightbar.announcementMsg">We are happy and excited to announce that we are going to include more exciting strategies to the platform contract. Hence, we will be introducing V2 which will bring more benefits to the community. Stay tuned and meanwhile, please withdraw your funds from the DAI Treasury Pool and Uniswap DAI/LFI LP Treasury Pool.</text>
+                                    <h4 class="page-title" style="text-align: center; font-size: 25px;" data-i18n="rightbar.announcement">Announcement</h4>
+                                    <text style="font-size: 18px;" data-i18n="rightbar.announcementMsg">We are happy and excited to announce that we are going to include more exciting strategies to the platform contract. Hence, we will be introducing V2 which will bring more benefits to the community. Stay tuned and meanwhile, please withdraw your funds from the DAI Treasury Pool and Uniswap DAI/LFI LP Treasury Pool.</text>
                                 </div>
                             </div>
                         </div>
@@ -3399,7 +3399,7 @@
         {
             yearnResponse = await fetch("https://api.yearn.finance/v1/chains/1/vaults/all");
             yearnVaults = await yearnResponse.json();
-            let vault = yearnVaults.find(yearnVault => yearnVault["address"] == "0x19D3364A399d251E894aC732651be8B0E4e85001");
+            let vault = yearnVaults.find(yearnVault => yearnVault["address"] == "0xdA816459F1AB5631232FE5e97a05BBBb94970c95");
             yearnAPR = vault["apy"]["net_apy"];
         });
 
